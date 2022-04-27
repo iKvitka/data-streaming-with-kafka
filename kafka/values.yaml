@@ -1,14 +1,14 @@
 autoCreateTopicsEnable: false
+deleteTopicEnable: true
 
 replicaCount: 3
+defaultReplicationFactor: 3
+
+zookeeper:
+  replicaCount: 3
 
 livenessProbe:
   initialDelaySeconds: 60
 
 readinessProbe:
   initialDelaySeconds: 60
-
-defaultReplicationFactor: 1
-
-zookeeper:
-  replicaCount: 3
